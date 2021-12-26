@@ -1,15 +1,13 @@
-
-
 let onformSubmit = document.getElementById("btn");
 onformSubmit.addEventListener("click", (event)=>{
-    let firstName =document.getElementById("FirstName");
-let lastName =document.getElementById("lastName");
-let Address = document.getElementById("address");
-let Pincode=document.getElementById("pincode");
-let gender = document.getElementById("gender");
-let foodChoice= document.getElementById("foodchoice");
-let state = document.getElementById("state");
-let country = document.getElementById("country");
+    let firstName =document.getElementById("FirstName").value;
+let lastName =document.getElementById("lastName").value;
+let Address = document.getElementById("address").value;
+let Pincode=document.getElementById("pincode").value;
+let gender = document.getElementById("gender").value;
+let foodChoice= document.getElementById("foodchoice").value;
+let state = document.getElementById("state").value;
+let country = document.getElementById("country").value;
 const nameTable = document.getElementById('nameTable');
     // let tableBody = document.getElementById("table-body");
     
@@ -39,13 +37,21 @@ const nameTable = document.getElementById('nameTable');
     td1.innerText=firstName;
     td2.innerText=lastName;
     td3.innerText=Address;
-    td4.innerText=pincode;
+    td4.innerText=Pincode;
     td5.innerText=gender;
     td6.innerText=foodChoice;
     td7.innerText=state;
     td8.innerText=country;
 
-    tr.appendChild(td1,td2,td3,td4,td5,td6,td7,td8);
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    tr.appendChild(td3);
+    tr.appendChild(td4);
+    tr.appendChild(td5);
+    tr.appendChild(td6);
+    tr.appendChild(td7);
+    tr.appendChild(td8);
+
     tableBody.appendChild(tr);
     nameTable.appendChild(tableBody);
 
@@ -55,5 +61,3 @@ const nameTable = document.getElementById('nameTable');
     
 
 });
-
-
