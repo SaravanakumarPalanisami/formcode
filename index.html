@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>DOM manipulation with form</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <form  id="formsubmit" action="">
+            <label for="FirstName">First Name</label><br/>
+            <input type="text" id="FirstName" name="FirstName" placeholder="Plz Enter Your First Name"><br/>
+            <label for="lastName">Last Name</label><br/>
+            <input type="text" id="lastName" name="lastName" placeholder="Plz Enter Your Last Name"><br/>
+            <label for="Address">Address</label><br/>
+            <input type="text" id="address" name="address" placeholder="Plz Enter Your Address"><br/>
+            <label for="pincode">Pincode</label><br/>
+            <input type="text" id="pincode" name="pincode" placeholder="Plz Enter Your Pincode"><br/>
+            <label for="gender">Gender</label><br/>
+            <input type="text" id="gender" name="gender" placeholder="plz Enter Your Gender"><br/>
+            <label for="Foodchoice">Food Choice:</label><br/>
+            <input type="text" id="foodchoice" name="foodchoice" placeholder="Plz Enter Your Foodchoice"><br/>
+            <!-- <label for="pizza">Pizza</label> -->
+            <!-- <input type="checkbox" id="foodchoice" name="foodchoice" value="burger"><label for="burger">burger</label>
+            <input type="checkbox" id="foodchoice" name="foodchoice" value="chickenroll"><label for="chickenroll">chickenroll</label>
+            <input type="checkbox" id="foodchoice" name="foodchoice" value="chicken65"><label for="chicken65">chicken65</label>
+            <input type="checkbox" id="foodchoice" name="foodchoice" value="softdrink"><label for="softdrink">Softdrink</label><br/> -->
+            <lable for="state">State</lable><br/>
+            <input type="text" id="state" name="state" placeholder="please enter your state"><br/>
+            <lable for="country">Country</lable><br/>
+            <input type="text" id="country" name="country" placeholder="enter your country"><br/><br/>
+           
+        </form> 
+        <button id="btn">Submit Your Order</button>   
+    </div>
+    
+    <table id="nameTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>Food Choice</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        
+    </table>
+
+
+    
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script scr="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+   
+</body>
+</html>
